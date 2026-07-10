@@ -9,6 +9,10 @@
   transition: background 0.35s var(--ease), border-color 0.35s var(--ease);
 }
 
+.nav--transparent {
+  background: linear-gradient(180deg, rgba(15, 12, 10, 0.7) 0%, rgba(15, 12, 10, 0.32) 70%, transparent 100%);
+}
+
 .nav--scrolled {
   background: rgba(252, 249, 241, 0.92);
   backdrop-filter: blur(10px);
@@ -29,8 +33,13 @@
   font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: 0.01em;
-  color: var(--text);
+  color: #fff;
   white-space: nowrap;
+  transition: color 0.35s var(--ease);
+}
+
+.nav--scrolled .nav__brand {
+  color: var(--text);
 }
 
 .nav__links {
@@ -41,14 +50,22 @@
 
 .nav__links a {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.85);
   position: relative;
   padding-bottom: 4px;
   transition: color 0.25s var(--ease);
   white-space: nowrap;
 }
 
+.nav--scrolled .nav__links a {
+  color: var(--text-muted);
+}
+
 .nav__links a:hover {
+  color: var(--amber-light);
+}
+
+.nav--scrolled .nav__links a:hover {
   color: var(--amber-dark);
 }
 
@@ -68,13 +85,18 @@
 }
 
 .nav__cta {
-  border: 1px solid var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   padding: 9px 18px;
   border-radius: 999px;
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--text);
+  color: #fff;
   transition: background 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.nav--scrolled .nav__cta {
+  border-color: var(--text);
+  color: var(--text);
 }
 
 .nav__cta:hover {
@@ -99,8 +121,12 @@
 .nav__burger span {
   height: 1.5px;
   width: 100%;
+  background: #fff;
+  transition: transform 0.25s var(--ease), opacity 0.25s var(--ease), background 0.35s var(--ease);
+}
+
+.nav--scrolled .nav__burger span {
   background: var(--text);
-  transition: transform 0.25s var(--ease), opacity 0.25s var(--ease);
 }
 
 .nav__burger.is-open span:nth-child(1) {
