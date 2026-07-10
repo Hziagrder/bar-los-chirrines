@@ -1,23 +1,23 @@
 /* ===================================================================
    BAR LOS CHIRRINES — Design tokens
-   Paleta cálida: fondo crema, acentos ámbar y bloques en carbón,
-   como una rostissería de toda la vida.
+   Modo oscuro: fondo carbón cálido, acentos ámbar, bloques casi
+   negros para dar contraste entre secciones.
 =================================================================== */
 
 :root {
   /* Color */
-  --cream: #fcf9f1;
-  --cream-soft: #f5efe1;
-  --cream-line: rgba(28, 25, 23, 0.1);
+  --cream: #1c1613;
+  --cream-soft: #241c17;
+  --cream-line: rgba(255, 255, 255, 0.09);
 
-  --charcoal: #1c1917;
-  --charcoal-soft: #26211d;
-  --charcoal-line: rgba(252, 249, 241, 0.12);
+  --charcoal: #120d0a;
+  --charcoal-soft: #1a1310;
+  --charcoal-line: rgba(255, 255, 255, 0.12);
 
-  --text: #1c1917;
-  --text-muted: #6b6058;
-  --text-invert: #fcf9f1;
-  --text-invert-muted: #beb2a4;
+  --text: #f4ecdd;
+  --text-muted: #b4a692;
+  --text-invert: #f7f0e4;
+  --text-invert-muted: #ad9d87;
 
   --amber: #d97706;
   --amber-dark: #b45f04;
