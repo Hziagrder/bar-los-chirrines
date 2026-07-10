@@ -1,6 +1,5 @@
 import './Footer.css'
 
-const WHATSAPP_LINK = 'https://wa.me/34602064226'
 const PHONE_DISPLAY = '+34 602 06 42 26'
 const PHONE_TEL = '+34602064226'
 
@@ -32,12 +31,7 @@ export default function Footer() {
           <h2>¿Hambre ya?</h2>
           <p>Pide tu comida y recíbela caliente en casa, o resérvanos mesa.</p>
         </div>
-        <a
-          className="btn btn--primary btn--large"
-          href={WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="btn btn--primary btn--large" href={`tel:${PHONE_TEL}`}>
           {PHONE_DISPLAY}
         </a>
       </div>
