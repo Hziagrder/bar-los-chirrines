@@ -60,7 +60,7 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--amber-dark);
+  color: var(--amber-light);
   margin-bottom: 16px;
   display: block;
 }
