@@ -60,11 +60,7 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
-          
-            className="nav__mobile-cta"
-            href={`tel:${PHONE_TEL}`}
-            onClick={() => setOpen(false)}
-          >
+          <a className="nav__mobile-cta" href={`tel:${PHONE_TEL}`} onClick={() => setOpen(false)}>
             {PHONE_DISPLAY}
           </a>
         </div>
