@@ -13,12 +13,6 @@ const PLATFORMS = [
     href: 'https://glovoapp.com/es/es/barcelona/stores/bar-rostisseria-los-chirrines-barcelona',
     accent: '#FFC244',
   },
-  {
-    name: 'Just Eat',
-    desc: 'Busca "Los Chirrines" y pide a domicilio.',
-    href: 'https://www.just-eat.es/',
-    accent: '#FF8000',
-  },
 ]
 
 export default function Delivery() {
@@ -34,7 +28,7 @@ export default function Delivery() {
 
       <div className="delivery__grid">
         {PLATFORMS.map((p) => (
-          <a
+          
             key={p.name}
             href={p.href}
             target="_blank"
