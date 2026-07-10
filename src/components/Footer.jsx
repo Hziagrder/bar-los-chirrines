@@ -12,7 +12,6 @@ const DELIVERY_LINKS = [
     name: 'Glovo',
     href: 'https://glovoapp.com/es/es/barcelona/stores/bar-rostisseria-los-chirrines-barcelona',
   },
-  { name: 'Just Eat', href: 'https://www.just-eat.es/' },
 ]
 
 const NAV_LINKS = [
