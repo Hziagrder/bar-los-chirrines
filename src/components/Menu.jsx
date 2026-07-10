@@ -2,11 +2,6 @@ import './Menu.css'
 
 const DISHES = [
   {
-    name: 'Hamburguesas',
-    desc: 'De receta propia, carne jugosa y pan tostado en plancha. Con las patatas de la casa.',
-    img: 'https://images.unsplash.com/photo-1550949987-33f716ccc232?auto=format&fit=crop&w=900&q=70',
-  },
-  {
     name: 'Bocadillos',
     desc: 'Pan del día relleno hasta arriba. Los de toda la vida y alguna combinación de la casa.',
     img: 'https://images.unsplash.com/photo-1481070414801-51fd732d7184?auto=format&fit=crop&w=900&q=70',
