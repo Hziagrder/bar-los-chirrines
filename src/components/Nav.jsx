@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './Nav.css'
 
-const WHATSAPP_LINK = 'https://wa.me/34602064226'
+const PHONE_TEL = '+34602064226'
+const PHONE_DISPLAY = '602 06 42 26'
 
 const LINKS = [
   { href: '#nosotros', label: 'Nosotros' },
@@ -22,7 +23,7 @@ export default function Nav() {
   }, [])
 
   return (
-    <header className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
+    <header className={`nav ${scrolled ? 'nav--scrolled' : 'nav--transparent'}`}>
       <div className="nav__inner">
         <a href="#top" className="nav__brand">
           Los Chirrines
@@ -36,8 +37,8 @@ export default function Nav() {
           ))}
         </nav>
 
-        <a className="nav__cta" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-          WhatsApp
+        <a className="nav__cta" href={`tel:${PHONE_TEL}`}>
+          {PHONE_DISPLAY}
         </a>
 
         <button
@@ -59,14 +60,12 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
-          <a
+          
             className="nav__mobile-cta"
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`tel:${PHONE_TEL}`}
             onClick={() => setOpen(false)}
           >
-            Reservar por WhatsApp
+            {PHONE_DISPLAY}
           </a>
         </div>
       )}
