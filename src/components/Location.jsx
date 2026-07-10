@@ -22,23 +22,18 @@ export default function Location() {
 
           <dl className="ubicacion__hours">
             <div>
-              <dt>Todos los días</dt>
-              <dd>6:00 – 23:00</dd>
+              <dt>Lunes a viernes</dt>
+              <dd>7:00 – 23:00</dd>
+            </div>
+            <div>
+              <dt>Fines de semana y festivos</dt>
+              <dd>9:00 – 23:00</dd>
             </div>
           </dl>
 
           <div className="ubicacion__actions">
-            <a
-              className="btn btn--ghost"
-              href={MAPS_DIRECTIONS}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Abrir en Google Maps
-            </a>
-            <a className="ubicacion__phone" href={`tel:${PHONE_TEL}`}>
-              {PHONE_DISPLAY}
-            </a>
+            <a className="btn btn--ghost" href={MAPS_DIRECTIONS} target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+            <a className="ubicacion__phone" href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a>
           </div>
         </div>
 
