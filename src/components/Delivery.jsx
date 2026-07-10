@@ -1,3 +1,4 @@
+import { createElement } from 'react'
 import './Delivery.css'
 
 const PLATFORMS = [
@@ -15,6 +16,43 @@ const PLATFORMS = [
   },
 ]
 
+function DeliveryCard(p) {
+  const icon = createElement(
+    'svg',
+    {
+      width: 18,
+      height: 18,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: 'currentColor',
+      strokeWidth: 1.8,
+      strokeLinecap: 'round',
+      strokeLinejoin: 'round',
+    },
+    createElement('path', { d: 'M7 17 17 7M9 7h8v8' })
+  )
+
+  return createElement(
+    'a',
+    {
+      key: p.name,
+      href: p.href,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+      className: 'delivery__card',
+      style: { '--accent': p.accent },
+    },
+    createElement('span', { className: 'delivery__accent', 'aria-hidden': 'true' }),
+    createElement(
+      'div',
+      { className: 'delivery__card-body' },
+      createElement('h3', null, p.name),
+      createElement('p', null, p.desc)
+    ),
+    createElement('span', { className: 'delivery__arrow', 'aria-hidden': 'true' }, icon)
+  )
+}
+
 export default function Delivery() {
   return (
     <section id="pedir" className="delivery">
@@ -26,25 +64,7 @@ export default function Delivery() {
         </p>
       </div>
 
-      <div className="delivery__grid">
-        {PLATFORMS.map((p) => {
-          const cardStyle = { '--accent': p.accent }
-          return (
-            <a key={p.name} href={p.href} target="_blank" rel="noopener noreferrer" className="delivery__card" style={cardStyle}>
-              <span className="delivery__accent" aria-hidden="true" />
-              <div className="delivery__card-body">
-                <h3>{p.name}</h3>
-                <p>{p.desc}</p>
-              </div>
-              <span className="delivery__arrow" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M7 17 17 7M9 7h8v8" />
-                </svg>
-              </span>
-            </a>
-          )
-        })}
-      </div>
+      <div className="delivery__grid">{PLATFORMS.map(DeliveryCard)}</div>
     </section>
   )
 }
