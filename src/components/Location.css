@@ -71,13 +71,13 @@
 .ubicacion__phone {
   font-size: 0.96rem;
   font-weight: 600;
-  color: var(--amber-dark);
+  color: var(--amber-light);
   border-bottom: 1px solid transparent;
   transition: border-color 0.25s var(--ease);
 }
 
 .ubicacion__phone:hover {
-  border-color: var(--amber-dark);
+  border-color: var(--amber-light);
 }
 
 .ubicacion__map {
@@ -91,6 +91,7 @@
   width: 100%;
   height: 100%;
   border: 0;
+  filter: invert(92%) hue-rotate(180deg) brightness(0.95) contrast(0.9);
 }
 
 @media (max-width: 860px) {
