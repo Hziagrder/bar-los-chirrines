@@ -4,7 +4,7 @@ const DISHES = [
   {
     name: 'Hamburguesas',
     desc: 'De receta propia, carne jugosa y pan tostado en plancha. Con las patatas de la casa.',
-    img: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=70',
+    img: 'https://images.unsplash.com/photo-1550949987-33f716ccc232?auto=format&fit=crop&w=900&q=70',
   },
   {
     name: 'Bocadillos',
