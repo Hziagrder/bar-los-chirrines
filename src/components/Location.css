@@ -35,30 +35,34 @@
 .ubicacion__hours {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   margin: 0 0 34px;
   padding: 20px 22px;
   border: 1px solid var(--cream-line);
   border-radius: var(--radius-md);
   background: var(--cream-soft);
-  max-width: 340px;
+  max-width: 380px;
 }
 
 .ubicacion__hours div {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   gap: 20px;
   font-size: 0.92rem;
 }
 
 .ubicacion__hours dt {
   color: var(--text-muted);
+  line-height: 1.4;
 }
 
 .ubicacion__hours dd {
   margin: 0;
   color: var(--text);
   font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .ubicacion__actions {
