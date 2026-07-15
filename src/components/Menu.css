@@ -20,10 +20,10 @@
 }
 
 .menu__grid {
-  max-width: 900px;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 26px;
 }
 
@@ -61,8 +61,16 @@
 }
 
 .dish__body h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.dish__price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--amber-light);
   margin-bottom: 8px;
 }
 
