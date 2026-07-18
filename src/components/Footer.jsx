@@ -23,6 +23,8 @@ const NAV_LINKS = [
   { href: '#nosotros', label: 'Nosotros' },
   { href: '#menu', label: 'Carta' },
   { href: '#pedir', label: 'Pedir a domicilio' },
+  { href: '#opiniones', label: 'Opiniones' },
+  { href: '#futbol', label: 'Fútbol' },
   { href: '#reservas', label: 'Reservas' },
   { href: '#ubicacion', label: 'Ubicación' },
 ]
