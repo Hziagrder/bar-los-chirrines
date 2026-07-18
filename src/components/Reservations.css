@@ -43,6 +43,12 @@
   color: var(--text-invert-muted);
 }
 
+.reservas__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
 .reservas__steps {
   list-style: none;
   margin: 0;
@@ -93,5 +99,14 @@
   }
   .reservas {
     padding: 80px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservas__actions {
+    flex-direction: column;
+  }
+  .reservas__actions .btn {
+    width: 100%;
   }
 }
