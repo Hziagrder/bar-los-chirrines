@@ -8,6 +8,7 @@ const LINKS = [
   { href: '#nosotros', label: 'Nosotros' },
   { href: '#menu', label: 'Carta' },
   { href: '#pedir', label: 'Pedir a domicilio' },
+  { href: '#futbol', label: 'Fútbol' },
   { href: '#reservas', label: 'Reservas' },
   { href: '#ubicacion', label: 'Cómo llegar' },
 ]
