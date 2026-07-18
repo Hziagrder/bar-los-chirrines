@@ -1,0 +1,111 @@
+.futbol {
+  background: var(--charcoal);
+  padding: 100px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.futbol::before {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  max-width: 60vw;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.14) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.futbol__inner {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.futbol__copy h2 {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--text-invert);
+  max-width: 440px;
+}
+
+.futbol__lead {
+  margin: 22px 0 26px;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  max-width: 440px;
+  color: var(--text-invert-muted);
+}
+
+.futbol__points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.futbol__points li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.94rem;
+  color: var(--text-invert-muted);
+  line-height: 1.5;
+}
+
+.futbol__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--amber);
+}
+
+.futbol__video-frame {
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--charcoal-line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(155deg, var(--charcoal-soft) 0%, #0c0908 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.futbol__play {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--charcoal-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--amber-light);
+}
+
+.futbol__video-frame p {
+  color: var(--text-invert-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 860px) {
+  .futbol__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .futbol {
+    padding: 80px 20px;
+  }
+}
