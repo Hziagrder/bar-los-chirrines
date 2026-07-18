@@ -1,0 +1,133 @@
+.reviews {
+  background: var(--cream);
+  padding: 100px 24px;
+}
+
+.reviews__header {
+  max-width: var(--max-width);
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.reviews__header h2 {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  font-weight: 600;
+}
+
+.reviews__carousel {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.reviews__arrow {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--cream-line);
+  background: var(--cream-soft);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s var(--ease), color 0.25s var(--ease), transform 0.2s var(--ease);
+}
+
+.reviews__arrow:hover {
+  background: var(--amber);
+  color: #fff;
+  transform: scale(1.06);
+}
+
+.reviews__card {
+  flex: 1;
+  min-height: 210px;
+  border: 1px solid var(--cream-line);
+  border-radius: var(--radius-lg);
+  background: var(--cream-soft);
+  padding: 34px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.reviews__stars {
+  color: var(--amber-light);
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.reviews__text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.reviews__author {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviews__name {
+  font-weight: 600;
+  font-size: 0.94rem;
+  color: var(--text);
+}
+
+.reviews__meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.reviews__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.reviews__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--cream-line);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.reviews__dot.is-active {
+  background: var(--amber);
+  transform: scale(1.3);
+}
+
+@media (max-width: 640px) {
+  .reviews {
+    padding: 70px 20px;
+  }
+  .reviews__carousel {
+    gap: 10px;
+  }
+  .reviews__card {
+    padding: 26px 20px;
+    min-height: 240px;
+  }
+  .reviews__arrow {
+    width: 38px;
+    height: 38px;
+  }
+  .reviews__text {
+    font-size: 1.02rem;
+  }
+}
