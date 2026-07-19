@@ -22,12 +22,8 @@ export default function Location() {
 
           <dl className="ubicacion__hours">
             <div>
-              <dt>Lunes a viernes</dt>
-              <dd>7:00 – 23:00</dd>
-            </div>
-            <div>
-              <dt>Fines de semana y festivos</dt>
-              <dd>9:00 – 23:00</dd>
+              <dt>Todos los días</dt>
+              <dd>6:00 – 23:00</dd>
             </div>
           </dl>
 
