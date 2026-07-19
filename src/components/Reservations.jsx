@@ -36,7 +36,7 @@ export default function Reservations() {
               <PhoneIcon />
               {PHONE_DISPLAY}
             </a>
-            <a className="btn btn--ghost-invert btn--large" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+            <a className="btn btn--whatsapp btn--large" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               <WhatsappIcon />
               WhatsApp
             </a>
